@@ -1,0 +1,14 @@
+.widget_dw_conditional_html_widget {
+  margin-bottom: 1.25rem;
+}
+.widget_dw_conditional_html_widget .widget-content p {
+  margin: 0 0 0.5rem 0;
+}
+.widget_dw_conditional_html_widget .widget-content a {
+  text-decoration: underline;
+}
+.widget_dw_conditional_html_widget .is-muted {
+  color: #6c757d;
+}
+
+/*# sourceMappingURL=conditional-html.css.map */

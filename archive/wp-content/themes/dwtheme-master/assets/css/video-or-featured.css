@@ -1,0 +1,23 @@
+.widget_dw_video_or_featured_widget .entry-title, .dw-vof .entry-title {
+  margin: 0;
+  line-height: 1.2;
+}
+.widget_dw_video_or_featured_widget .entry-meta, .dw-vof .entry-meta {
+  margin: 0 0 0.75rem 0;
+  color: var(--bs-secondary-color, #6c757d);
+  font-size: 0.875rem;
+}
+.widget_dw_video_or_featured_widget .dw-embed iframe, .widget_dw_video_or_featured_widget .dw-embed video, .widget_dw_video_or_featured_widget .dw-embed embed, .widget_dw_video_or_featured_widget .dw-embed object, .dw-vof .dw-embed iframe, .dw-vof .dw-embed video, .dw-vof .dw-embed embed, .dw-vof .dw-embed object {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+.widget_dw_video_or_featured_widget img, .dw-vof img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid #e0e0e0;
+}
+
+/*# sourceMappingURL=video-or-featured.css.map */
