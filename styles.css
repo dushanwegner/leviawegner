@@ -1,0 +1,86 @@
+/* Base styles */
+:root {
+    --primary-color: #2c3e50;
+    --text-color: #333;
+    --light-gray: #f5f5f5;
+    --spacing-unit: 1rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-unit);
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Center vertically */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    gap: 1.25rem;
+}
+
+/* Header */
+header {
+    padding: 0;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+    letter-spacing: -0.5px;
+}
+
+/* Main content */
+main {
+    flex: 0 0 auto;
+    padding: 0;
+    text-align: center;
+}
+
+/* Image sizing */
+main img {
+    display: block;
+    max-width: 220px; /* smallish */
+    width: 60vw; /* responsive downscale on small screens */
+    height: auto;
+    margin: 0 auto 0.5rem;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 0.5rem 0;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.75rem;
+    }
+    
+    header {
+        padding: 0;
+    }
+}

@@ -1,0 +1,117 @@
+:root {
+  /* Body (keep defaults lightweight; primary/link come from Customizer) */
+  --bs-body-bg: #ffffff;
+  --bs-body-color: #212529;
+  /* Example width custom prop used by layout below */
+  --dw-container-max-width: 1320px;
+  /* Centralized link decorations (colors use Bootstrap vars) */
+  --dw-link-text-decoration: none;
+  --dw-link-hover-text-decoration: underline;
+}
+
+.container,
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl {
+  max-width: var(--dw-container-max-width);
+}
+
+@media (max-width: 767.98px) {
+  .container,
+  .container-fluid,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1399.98px) {
+  .container,
+  .container-fluid,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    /* Comfort bump on tablet/smaller desktop */
+    padding-left: 1.125rem;
+    padding-right: 1.125rem;
+  }
+}
+.navbar-nav li {
+  margin-left: var(--bs-navbar-nav-link-ar-x, 0.5rem);
+  font-size: 0.95rem;
+}
+
+img,
+img.custom-logo,
+img.wp-post-image,
+.figure-img,
+.card-img,
+.card-img-top,
+.card-img-bottom,
+.img-thumbnail,
+.wp-caption img,
+.alignnone img,
+.aligncenter img,
+.alignleft img,
+.alignright img {
+  border-radius: 0 !important;
+}
+
+img.rounded,
+img.rounded-0,
+img.rounded-1,
+img.rounded-2,
+img.rounded-3,
+img.rounded-circle,
+img.rounded-pill {
+  border-radius: 0 !important;
+}
+
+.pagination-icons .nav-links {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+.pagination-icons .page-numbers {
+  display: inline-flex;
+  width: 2.25rem;
+  height: 2.25rem;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #dee2e6;
+  color: inherit;
+  text-decoration: none;
+  border-radius: 999px;
+  line-height: 1;
+}
+.pagination-icons .page-numbers.current {
+  background-color: var(--bs-primary, #0d6efd);
+  color: #fff;
+  border-color: var(--bs-primary, #0d6efd);
+}
+.pagination-icons .page-numbers:hover {
+  border-color: var(--bs-primary, #0d6efd);
+  color: var(--bs-primary, #0d6efd);
+}
+
+/* Global link styling (centralized)
+   - No decoration by default
+   - Underline on hover/focus
+   - Exclude buttons and common nav items to avoid regressions */
+a:not(.btn):not(.navbar-brand):not(.nav-link):not(.dropdown-item) {
+  text-decoration: var(--dw-link-text-decoration, none);
+  transition: text-decoration-color 0.15s ease-in-out;
+}
+a:not(.btn):not(.navbar-brand):not(.nav-link):not(.dropdown-item):hover, a:not(.btn):not(.navbar-brand):not(.nav-link):not(.dropdown-item):focus {
+  text-decoration: var(--dw-link-hover-text-decoration, underline);
+}
+
+/*# sourceMappingURL=bootstrap-overrides.css.map */

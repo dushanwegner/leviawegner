@@ -1,0 +1,74 @@
+article {
+  border: none;
+}
+article .card {
+  border: none;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  transition: none;
+  box-shadow: none;
+}
+article .card img {
+  border: 1px solid #e0e0e0;
+  /* no bottom margin here; spacing handled by following .card-body when it has content */
+  margin-bottom: 0;
+}
+article .card .dw-card-media {
+  /* no bottom margin here; spacing handled by following .card-body when it has content */
+  margin-bottom: 0;
+}
+article .card:hover, article .card:focus-within {
+  transform: none;
+  box-shadow: none;
+  border-color: transparent;
+}
+article .card > .dw-card-media + .card-body:not(:empty),
+article .card > a + .card-body:not(:empty),
+article .card > img + .card-body:not(:empty) {
+  margin-top: 0.5rem;
+}
+article .card-img-top {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  background: #f7f7f7;
+  padding-bottom: 1rem;
+}
+article .card-body {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+article .card-title {
+  margin: 0 0 0.3rem;
+  line-height: 1.25;
+}
+article .card-title a {
+  color: inherit;
+  text-decoration: none;
+}
+article .card-title a:hover, article .card-title a:focus {
+  text-decoration: underline;
+}
+article .card-text {
+  font-size: 0.925rem;
+  color: var(--bs-secondary-color);
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin: 0;
+}
+article .card-text.no-clamp {
+  display: block;
+  -webkit-line-clamp: unset;
+  -webkit-box-orient: unset;
+  overflow: visible;
+}
+article .entry-meta,
+article .card-meta {
+  color: var(--bs-secondary-color);
+  font-size: 0.875rem;
+}
+
+/*# sourceMappingURL=article-cards.css.map */
